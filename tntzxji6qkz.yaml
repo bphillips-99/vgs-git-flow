@@ -138,7 +138,7 @@ data:
       protocol: http
       source_endpoint: '*'
       tags:
-        name: larky-testing-redact
+        name: larky-redact
         source: RouteContainer
       updated_at: '2024-04-03T05:49:06'
     id: f2ae16f5-f36c-448a-8d7b-15275dd72212
