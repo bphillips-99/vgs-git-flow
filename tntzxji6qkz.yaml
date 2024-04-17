@@ -250,8 +250,10 @@ data:
                       KEY = string_to_bytes(vault.reveal('tok_sandbox_bmNL9mL5BjNoxEbyMmQomF'))
                       ID = headers['x-customer-id']
                       card_number = vault.reveal(body['account'])
+                      
                       body['account'] = card_number
                       plainText = '|'.join([card_number, ID])
+
                       # create hmac of body
                       body_as_bytes = string_to_bytes(plainText)
                       hash_value = HMAC.new(KEY, body_as_bytes, digestmod=MD5).digest()
